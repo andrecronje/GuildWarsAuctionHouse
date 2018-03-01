@@ -1,0 +1,201 @@
+body {
+	
+}
+
+#header {
+	color: white;
+	text-shadow: 2px 2px 1px black;
+}
+
+#table-worldboss {
+	font-size: 1.5em;
+}
+
+.atebits_center {
+	background: #FFF;
+}
+
+.table-header {
+	font-size: 1.2em;
+	font-weight: bold;
+	background: white !important;
+	white-space: nowrap;
+	margin-bottom: 10px;
+}
+
+.table-sub-header {
+	font-size: 0.7em;
+}
+
+#countdown-div,
+#localtime-div,
+#psttime-div {
+	text-align: center;
+}
+
+.countdown,
+.localtime,
+.psttime {
+	text-align: center;
+}
+
+#navbar {
+	margin: 20px 0px 20px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#lang-select {
+	height: 100%;
+	font-size: 0.8em;
+	padding: 2px 5px;
+	font-weight: normal;
+}
+
+#table-worldboss {
+	margin: 20px 0px 20px;
+}
+
+#table-worldboss .row {
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+       -moz-animation: fadein 1s; /* Firefox */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera */
+            animation: fadein 1s;
+	transition: border-left 0.3s ease-out,
+		    background 0.3s ease-out;
+	position: relative;
+	border-left: 3px solid white;
+}
+
+#table-worldboss .row:not(:nth-child(1)):hover {
+	border-left: 3px solid #CC0000;
+}
+
+#table-worldboss .row-highlight,
+.note-hover {
+	background: #FFEFEF !important;
+}
+
+#table-worldboss .row:nth-child(even) {
+	background: #F8F8F8;
+}
+
+#table-worldboss .row:nth-child(3) {
+	background: url(splash.png) no-repeat;
+	background-size: auto 100% !important;
+}
+
+#table-worldboss .row:nth-child(3)::before {
+	content: "Now";
+	position: absolute;
+	top: 7px;
+	left: -30px;
+	font-size: 0.5em;
+	color: red;
+}
+
+.done {
+	text-decoration: line-through;
+	opacity: 0.2;
+}
+
+.waypoint {
+	font-family: monospace;
+	cursor: pointer;
+}
+
+.waypoint input {
+	margin-left: -14px;
+	position: absolute;
+	z-index: 10;
+}
+
+.chatlink {
+	width: 100%;
+}
+
+.scale-lowlevel > .wbframe,
+.note-green {
+	color: #006600;
+	text-shadow: 0px 0px 20px #AAFFAA;
+}
+
+.scale-standard > .wbframe {
+}
+
+.scale-hardcore > .wbframe,
+.note-red {
+	color: #990000;
+	text-shadow: 0px 0px 20px #FFAAAA;
+}
+
+.hiddenvalue {
+}
+
+.wbframe {
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.wbmap {
+	color: #CCCCCC;
+	text-shadow: none;
+	font-size: 0.6em;
+}
+
+#note {
+	padding-top: 9px;
+	margin: 20px 0px 20px;
+	border-top: 1px solid #EEE;
+}
+
+#note-title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.note-done {
+	text-decoration: line-through;
+}
+
+.note-underline {
+	text-decoration: underline;
+}
+
+#footer {
+	color: #CCCCCC;
+	padding-top: 9px;
+	margin: 20px 0 40px;
+	border-top: 1px solid #EEE;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

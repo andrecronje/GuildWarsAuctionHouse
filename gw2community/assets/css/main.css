@@ -1,0 +1,338 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Small - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* FONTS */
+@font-face {
+	font-family: 'Finalnew';
+	src: url('../fonts/Finalnew.ttf');
+}
+body {
+  font-family: 'Finalnew';
+  text-align: center;}
+
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+  
+  /* =========================
+
+		GENERAL STYLES 
+
+   =========================*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none; }
+
+a:link,
+a:visited,
+a:active {
+  font-weight: 600;
+  color: #f5f6f7;
+  text-decoration: none; }
+  a:link:hover,
+  a:visited:hover,
+  a:active:hover {
+    color: #e1e1e1;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s; }
+
+
+.nav {
+  position: fixed;
+  width: 30px;
+  height: 84px;
+  z-index: 100;
+  right: 0;
+  top: 50%;
+  margin-top: -42px; }
+  .nav a {
+    text-indent: -9999px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: rgba(245, 246, 247, 0.4);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s; }
+    .nav a:hover {
+      background: #f5f6f7;
+      -webkit-transition: background 1s;
+      -moz-transition: background 1s;
+      -ms-transition: background 1s;
+      -o-transition: background 1s;
+      transition: background 1s; }
+
+.mb-7 {
+  margin-bottom: 70px; }
+  
+.centered {
+	text-align: center;
+}
+
+.footer_menu {
+  position: absolute;
+  bottom: 0;
+  margin:0 auto;
+  overflow: hidden;
+  width:100%;
+  height:80px;
+}
+.menu_item {
+  font-size: 26px;
+  color: #251714 !important;
+  text-align:center;
+  padding:40px;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* =========================
+
+		SECTION STYLES 
+
+   =========================*/
+#home,
+#header,
+#boss_timer,
+#trading_post {
+  position: relative; }
+
+.home-block {
+  width: 100%;
+  position: absolute;
+  top: 21%; }
+@media (orientation:portrait) {
+.home-block {
+  top: 5%; }
+}
+.home-image {
+  width: auto;
+  height: auto; }
+
+#home {
+  background: #4a4a4a;
+  background-image: url('../img/home.jpg');
+  background-size: cover;
+}
+
+#header {
+  background: #4a4a4a;
+  background-image: url('../img/header.jpg');
+  background-size: cover;
+}
+
+#boss_timer {
+  background: #4a4a4a;
+  background-image: url('../img/boss_timer.jpg');
+  background-size: cover;
+}
+  
+#trading_post {
+  background: #4a4a4a;
+  background-image: url('../img/trading_post.jpg');
+  background-size: cover;
+}
+
+.arrow_down{
+  margin-top:40px;
+ }
+
+/* =========================
+
+			home 
+
+   =========================*/
+
+.home_header {
+	font-size: 72px;
+	color: #251714;
+	padding-top:25px;
+}
+.home_info {
+	line-height:32px;
+	color: #251714;
+	font-size: 32px;
+}
+
+
+/* =========================
+
+			header 
+
+   =========================*/
+
+.header_right {
+  width: 50%;
+  position:absolute;
+  right:35px;
+  top: 15%;
+  padding: 25px; }  
+@media (orientation:portrait) {
+.header_right {
+  top: 2%; }
+}  
+.header_body_text {
+  font-size: 26px;
+  color:#FFF;
+  padding-top:30px;
+}
+/* =========================
+
+			boss_timer 
+
+   =========================*/
+.boss_timer_logo {
+  float:left;
+  margin-left:40px;
+  margin-top:40px;
+}
+.flip{
+  width: 0;
+  word-wrap: break-word;
+  float:left;
+  color: #fff;
+  font-size:36px;
+  padding-left:5%;
+  padding-top:40px;
+}
+@media (orientation:portrait) {
+.boss_timer_logo {
+  display:none;
+}
+.flip{
+  display:none;
+}
+} 
+.row {
+  margin-right:0;
+  margin-left:0;
+}
+.table-header {
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+}
+#table-worldboss {
+	background-color: rgba(62,57,52, 0.5);
+	float:right;
+	width:65%;
+	margin-right:10%;
+	margin-top:40px;
+}
+@media (orientation:portrait) {
+#table-worldboss {
+	width:80%;
+	margin-right:12%;
+	margin-top:10px;
+}
+}
+.col-sm-4 {
+	width: 33.33333333333333%;
+	float: left;
+}
+.col-sm-2 {
+	width: 16.666666666666664%;
+	float: left;
+} 
+.table-header {
+  color: #251815;
+  font-size:25px;
+  background-color: rgba(141,135,120,0.5);
+}
+.table-content {
+  color: #fff;
+  font-size:25px;
+  padding-top:1%;
+  padding-bottom:1.5%;
+  padding-left:10px;
+}
+.wbframe {
+  text-align:left;
+}
+/* =========================
+
+			trading_post 
+
+   =========================*/
+
+#table-flip {
+	background-color: rgba(157,148,128, 0.3);
+	float:left;
+	width:65%;
+	margin-left:10%;
+	margin-top:40px;
+}
+#table-flip > .table-header {
+  color: #FFF;
+  font-size:25px;
+  background-color: rgba(52,41,37,0.5);
+}
+.item-name-div {
+  text-align:left;
+ }
+ .trading_post_logo {
+  float:right;
+  margin-right:60px;
+  margin-top:40px;
+}
+.trading_post_flip{
+  width: 0;
+  word-wrap: break-word;
+  float:right;
+  color: #fff;
+  font-size:26px;
+  padding-right:5%;
+  padding-top:40px;
+}
+@media (orientation:portrait) {
+#table-flip {
+	width:90%;
+	margin-left:10%;
+	margin-top:10px;
+}
+.trading_post_logo {
+  display:none;
+}
+.trading_post_flip{
+  display:none;
+}
+} 
